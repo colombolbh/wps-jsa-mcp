@@ -3,6 +3,8 @@
 WPS 表格 JSA 宏远程编辑工具 —— 通过 MCP（Model Context Protocol）在 AI 编码助手中直接读写 WPS 工作簿的 JSA 宏代码。
 
 ---
+## 下载代码到本地
+复制代码到命令行回车运行`git clone https://github.com/colombolbh/wps-jsa-mcp.git`
 
 ## 📦 安装 WPS 加载项
 
