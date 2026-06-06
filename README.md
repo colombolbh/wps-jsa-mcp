@@ -6,7 +6,7 @@ WPS 表格 JSA 宏远程编辑工具 —— 通过 MCP（Model Context Protocol�
 
 ## 📦 安装 WPS 加载项
 
-进入 `JSA-mcp/dist/` 目录，选择以下任一方式安装：
+进入 `wps_jsa_plugin/JSA-mcp/dist/` 目录，选择以下任一方式安装：
 
 - **方式一：** 双击 `install.bat`
 - **方式二：** 在 `JSA-mcp/dist/` 目录下，右键 → 在终端中打开，执行：
@@ -23,7 +23,7 @@ WPS 表格 JSA 宏远程编辑工具 —— 通过 MCP（Model Context Protocol�
 
 ### 获取 MCP 服务路径
 
-MCP 服务端入口文件位于 `JSA-mcp/mcp-dist/index.js`，请先记下该文件的**完整绝对路径**，例如：
+MCP 服务端入口文件位于 `wpsjsa-mcp/dist/index.js`，请先记下该文件的**完整绝对路径**，例如：
 
 ```
 C:\Users\colom\OneDrive\桌面\wps_jsa_plugin\JSA-mcp\mcp-dist\index.js
