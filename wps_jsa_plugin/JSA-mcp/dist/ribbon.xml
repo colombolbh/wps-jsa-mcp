@@ -1,0 +1,30 @@
+<!--
+    WPS 加载项 - 功能区（Ribbon）界面定义文件
+    作用：仅保留一个切换开关按钮，用于控制 MCP WebSocket 连接的启停。
+    
+    关键概念：
+      - toggleButton: 切换按钮（有按下/弹起两种状态）
+      - onAction:     按钮被点击时触发
+      - getPressed:   返回按钮的按下状态（true=按下，false=弹起）
+      - getLabel:     动态设置按钮显示文字
+      - getImage:     动态设置按钮图标
+-->
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="OnAddinLoad">
+    <ribbon startFromScratch="false">
+        <tabs>
+            <!-- WPS 顶部选项卡 -->
+            <tab id="wpsAddinTab" label="wps-jsa-mcp">
+                <group id="btnDemoGroup" label="MCP 服务">
+                    <!-- 唯一按钮：MCP WebSocket 连接开关 -->
+                    <toggleButton id="btnMcpToggle"
+                        getLabel="OnGetLabel"
+                        onAction="OnToggleAction"
+                        getPressed="OnGetPressed"
+                        getImage="GetImage"
+                        getEnabled="OnGetEnabled"
+                        size="large"/>
+                </group>
+            </tab>
+        </tabs>
+    </ribbon>
+</customUI>

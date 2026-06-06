@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    WPS 加载项 (JSA Plugin) 清单文件
+    作用：向 WPS 声明加载项的基本信息
+    参考文档：https://open.wps.cn/docs/office
+-->
+<JsPlugin>
+  <!-- WPS 加载项 API 版本号 -->
+  <ApiVersion>1.0.0</ApiVersion>
+  <!-- 加载项名称 -->
+  <Name>JSA-MCP</Name>
+  <!-- 加载项描述 -->
+  <Description>JSA MCP WebSocket 连接器 — 通过 WebSocket 远程读写工作簿中的 JSA 代码</Description>
+</JsPlugin>

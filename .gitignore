@@ -1,0 +1,21 @@
+# 忽略所有文件
+*
+
+# 保留根目录 .gitignore 自身
+!.gitignore
+
+# === wps_jsa_plugin: 只追踪 dist ===
+!wps_jsa_plugin/
+wps_jsa_plugin/*
+!wps_jsa_plugin/.gitignore
+!wps_jsa_plugin/README.md
+!wps_jsa_plugin/JSA-mcp/
+wps_jsa_plugin/JSA-mcp/*
+!wps_jsa_plugin/JSA-mcp/dist/
+!wps_jsa_plugin/JSA-mcp/dist/**
+
+# === wpsjsa-mcp: 只追踪 dist ===
+!wpsjsa-mcp/
+wpsjsa-mcp/*
+!wpsjsa-mcp/dist/
+!wpsjsa-mcp/dist/**

@@ -1,0 +1,14 @@
+# 忽略所有文件
+*
+
+# 保留 .gitignore 自身
+!.gitignore
+
+# 保留 README.md
+!README.md
+
+# 保留 JSA-mcp 目录，但只追踪其中的 dist/
+!JSA-mcp/
+JSA-mcp/*
+!JSA-mcp/dist/
+!JSA-mcp/dist/**
