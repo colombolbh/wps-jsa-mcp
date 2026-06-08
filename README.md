@@ -4,7 +4,11 @@ WPS 表格 JSA 宏远程编辑工具 —— 通过 MCP（Model Context Protocol�
 
 ---
 
-## � 快速开始
+## 系统要求
+
+Node.js v20.19 或更新版本
+
+## 快速开始
 
 ```bash
 git clone https://github.com/colombolbh/wps-jsa-mcp.git

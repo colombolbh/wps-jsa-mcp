@@ -53,7 +53,8 @@ function OnAddinLoad(ribbonUI) {
     }
 
     // 初始化 MCP 开关状态为"关闭"
-    window.Application.PluginStorage.setItem("McpEnabled", false);
+    window.Application.PluginStorage.setItem("McpEnabled", true);
+    startMcpService(); // 加载项启动时默认开启 MCP 服务
     return true;
 }
 
