@@ -4,22 +4,28 @@ WPS 表格 JSA 宏远程编辑工具 —— 通过 MCP（Model Context Protocol�
 
 ---
 
-## 📦 安装 WPS 加载项
+## 📦 一键安装（推荐）
 
-进入 `JSA-mcp/dist/` 目录，选择以下任一方式安装：
+在项目根目录下，选择以下任一方式运行安装脚本：
 
 - **方式一：** 双击 `install.bat`
-- **方式二：** 在 `JSA-mcp/dist/` 目录下，右键 → 在终端中打开，执行：
+- **方式二：** 右键 → 在终端中打开，执行：
 
   ```powershell
   powershell -ExecutionPolicy Bypass -File .\install.ps1
   ```
 
+安装脚本会自动完成：
+1. 安装 WPS 加载项（`JSA-mcp/dist/` → WPS 插件目录）
+2. 引导你选择 AI 平台（VS Code / Cursor / Claude / Codex / Windsurf），自动配置 MCP 服务端
+
 安装完成后打开 WPS 表格，即可在功能区看到 **JSA-MCP** 选项卡。
 
 ---
 
-## 🔌 配置 MCP 服务端
+## 🔌 手动配置 MCP 服务端
+
+如果你跳过了自动配置，或需要手动设置，参考以下平台配置。
 
 ### 获取 MCP 服务路径
 
@@ -39,7 +45,7 @@ C:\Users\colom\OneDrive\桌面\wps_jsa_plugin\JSA-mcp\mcp-dist\index.js
     "wpsjsa-mcp": {
       "command": "node",
       "args": ["C:\\Users\\你的用户名\\OneDrive\\桌面\\wps_jsa_plugin\\JSA-mcp\\mcp-dist\\index.js"],
-      "env": {}
+      "type": "stdio"
     }
   }
 }
@@ -64,7 +70,8 @@ args = ["C:\\Users\\你的用户名\\OneDrive\\桌面\\wps_jsa_plugin\\JSA-mcp\\
   "mcpServers": {
     "wpsjsa-mcp": {
       "command": "node",
-      "args": ["C:\\Users\\你的用户名\\OneDrive\\桌面\\wps_jsa_plugin\\JSA-mcp\\mcp-dist\\index.js"]
+      "args": ["C:\\Users\\你的用户名\\OneDrive\\桌面\\wps_jsa_plugin\\JSA-mcp\\mcp-dist\\index.js"],
+      "type": "stdio"
     }
   }
 }
@@ -79,7 +86,8 @@ args = ["C:\\Users\\你的用户名\\OneDrive\\桌面\\wps_jsa_plugin\\JSA-mcp\\
   "mcpServers": {
     "wpsjsa-mcp": {
       "command": "node",
-      "args": ["C:\\Users\\你的用户名\\OneDrive\\桌面\\wps_jsa_plugin\\JSA-mcp\\mcp-dist\\index.js"]
+      "args": ["C:\\Users\\你的用户名\\OneDrive\\桌面\\wps_jsa_plugin\\JSA-mcp\\mcp-dist\\index.js"],
+      "type": "stdio"
     }
   }
 }
@@ -94,7 +102,8 @@ args = ["C:\\Users\\你的用户名\\OneDrive\\桌面\\wps_jsa_plugin\\JSA-mcp\\
   "mcpServers": {
     "wpsjsa-mcp": {
       "command": "node",
-      "args": ["<替换为你的 mcp-dist/index.js 绝对路径>"]
+      "args": ["<替换为你的 mcp-dist/index.js 绝对路径>"],
+      "type": "stdio"
     }
   }
 }

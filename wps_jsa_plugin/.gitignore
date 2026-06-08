@@ -7,8 +7,14 @@
 # 保留 README.md
 !README.md
 
-# 保留 JSA-mcp 目录，但只追踪其中的 dist/
+# 保留安装脚本
+!install.bat
+!install.ps1
+
+# 保留 JSA-mcp 目录，但只追踪其中的 dist/ 和 mcp-dist/
 !JSA-mcp/
 JSA-mcp/*
 !JSA-mcp/dist/
 !JSA-mcp/dist/**
+!JSA-mcp/mcp-dist/
+!JSA-mcp/mcp-dist/**

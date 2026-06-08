@@ -9,10 +9,14 @@
 wps_jsa_plugin/*
 !wps_jsa_plugin/.gitignore
 !wps_jsa_plugin/README.md
+!wps_jsa_plugin/install.bat
+!wps_jsa_plugin/install.ps1
 !wps_jsa_plugin/JSA-mcp/
 wps_jsa_plugin/JSA-mcp/*
 !wps_jsa_plugin/JSA-mcp/dist/
 !wps_jsa_plugin/JSA-mcp/dist/**
+!wps_jsa_plugin/JSA-mcp/mcp-dist/
+!wps_jsa_plugin/JSA-mcp/mcp-dist/**
 
 # === wpsjsa-mcp: 只追踪 dist ===
 !wpsjsa-mcp/
